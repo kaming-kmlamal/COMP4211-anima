@@ -27,14 +27,14 @@ IMG_SIZE = 256
 BLANK_SPACE = 12
 L1_LAMBDA = 100
 
-TRAIN_DIR = "datasets/combined_images/train"
-VAL_DIR = "datasets/combined_images/valid"
-TEST_DIR = "datasets/combined_images/test"
+TRAIN_DIR = "datasets/train"
+VAL_DIR = "datasets/valid"
+TEST_DIR = "datasets/test"
 EVALUATION_DIR = "datasets/evaluation"
 TENSORBOARD_DIR = "tensorboard"
 
 # set to True if want to load model at checkpoint, CURRENT_EPOCH - 1
-LOAD_MODEL = False
+LOAD_MODEL = True
 MODEL_PATH = "checkpoints"
 # set CURRENT_EPOCH to multiple of five for checkpoints and tensorboard
 CURRENT_EPOCH = get_current_epoch(LOAD_MODEL, MODEL_PATH)

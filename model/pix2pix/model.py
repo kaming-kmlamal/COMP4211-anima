@@ -31,6 +31,8 @@ class Pix2Pix():
         if config.LOAD_MODEL:
             load_model(self.generator, config.MODEL_PATH, f"generator_{config.CURRENT_EPOCH-1}")
             load_model(self.discriminator, config.MODEL_PATH, f"discriminator_{config.CURRENT_EPOCH-1}")
+            print("load cureent model generator epoch:",config.CURRENT_EPOCH-1)
+            print("load cureent model discriminator epoch:",config.CURRENT_EPOCH-1)
         else:
             he_initialization(self.generator)
             he_initialization(self.discriminator)
