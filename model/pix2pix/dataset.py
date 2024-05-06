@@ -8,7 +8,7 @@ import random
 import numpy as np
 from PIL import Image
 
-class ClothingDataset(Dataset): 
+class AnimeDataset(Dataset): 
     def __init__(self, img_size, blank_space, images_dir, augmentation=True):
         self.img_size = img_size
         self.blank_space = blank_space
